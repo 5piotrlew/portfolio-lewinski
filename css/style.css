@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+body {
+    margin: 0 auto;
+    width: 90vw;
+    min-height: 700px;
+}
+
+#wrapper {
+    display: flex; 
+    flex-direction: column;
+}
+
+nav#main-nav {
+    background: red;
+    background-color: rgba(244, 231, 231, 0.9);
+}
+
+nav#main-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav#main-nav ul li.menu-item {
+    padding: 5px 15px;
+}
+
+nav#main-nav ul li.menu-item:first-child {
+    flex: 1;   
+}
+
+
+nav#main-nav ul li.menu-item a {
+    text-decoration: none;
+    color: #a1700c;
+    font-weight: 500;
+}
+
+header#main-header {
+   
+}
+
+section#about {
+    
+}
+
+section#skills {
+    
+}
+
+section#experience {
+    
+}
+
+section#my-projects{
+    
+}
+
+section#my-courses{
+    
+}
+
+section#contact {
+    
+}
