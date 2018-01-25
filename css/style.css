@@ -11,7 +11,7 @@ body {
 }
 
 #wrapper {
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -20,6 +20,8 @@ nav#main-nav {
     background-color: rgba(244, 231, 231, 0.9);
     overflow: hidden;
     max-height: 55px;
+    position: fixed;
+    width: 100%;
 }
 
 nav#main-nav ul {
@@ -36,7 +38,18 @@ nav#main-nav ul li.menu-item {
 
 nav#main-nav ul li.menu-item.menu-home-item {
     flex: 1;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    padding-left: 0;
+}
+
+nav#main-nav ul li.menu-item.menu-home-item i {
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+nav#main-nav ul li.menu-item.menu-home-item i:hover {
+    animation-name: move-up;
 }
 
 nav#main-nav ul li.menu-item.menu-mobile-item {
@@ -48,7 +61,7 @@ nav#main-nav ul li.menu-item a {
     color: #a1700c;
     font-weight: 500;
     font-size: 1em;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
     padding-bottom: 25px;
 }
 
@@ -56,30 +69,48 @@ nav#main-nav ul li.menu-item:not(.menu-home-item) a:hover {
     padding-bottom: 5px;
 }
 
+@keyframes move-up {
+    0% {
+        padding-top: 20px;
+        color: black;
+    }
+    50% {
+        padding-top: 0px;
+    }
+    100% {
+        padding-top: 20px;
+        color: red;
+    }
+}
+
 header#main-header {
-   
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/wallhaven-500970.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-section#about {
-    
+header#main-header h1.main-header-item {
+    order: 2;
 }
 
-section#skills {
-    
+header#main-header h2.main-header-item {
+ order: 1;   
 }
 
-section#experience {
-    
-}
+section#about {}
 
-section#my-projects{
-    
-}
+section#skills {}
 
-section#my-courses{
-    
-}
+section#experience {}
 
-section#contact {
-    
-}
+section#my-projects {}
+
+section#my-courses {}
+
+section#contact {}
