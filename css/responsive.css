@@ -4,7 +4,7 @@
         align-items: flex-end;
         padding-right: 5px;
     }
-    nav#main-nav ul li.menu-item:first-child {
+    nav#main-nav ul li.menu-item.menu-home-item {
         order: 0;
         align-self: flex-start;
         display: flex;
