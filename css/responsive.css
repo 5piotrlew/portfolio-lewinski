@@ -19,5 +19,9 @@
         order: 2;
         display: none;
     }
+    nav#main-nav ul li.menu-item a, nav#main-nav ul li.menu-item a:hover {
+        border-bottom: none;
+        padding: 0;
+    }
 }
 

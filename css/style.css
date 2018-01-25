@@ -17,6 +17,7 @@ body {
 nav#main-nav {
     background: red;
     background-color: rgba(244, 231, 231, 0.9);
+    overflow: hidden;
 }
 
 nav#main-nav ul {
@@ -42,6 +43,12 @@ nav#main-nav ul li.menu-item a {
     text-decoration: none;
     color: #a1700c;
     font-weight: 500;
+    border-bottom: 2px solid red;
+    padding-bottom: 25px;
+}
+
+nav#main-nav ul li.menu-item a:hover {
+    padding-bottom: 5px;
 }
 
 header#main-header {
