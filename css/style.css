@@ -178,7 +178,7 @@ section#about .container .image-programmer {
     min-height: 670px;
     perspective: 800px;
     display: block;
-    margin-top: 0;   
+    margin-top: 0;  
 }
 
 section#about .container .image-programmer .behind-img, section#about .container .image-programmer .front-img {    
