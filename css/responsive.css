@@ -1,3 +1,9 @@
+@media all and (max-width: 927px) {
+    section#about .container {
+        flex-direction: column;
+    }
+}
+
 @media all and (max-width: 680px) {
     nav#main-nav.mobile-menu {
         max-height: 500px;

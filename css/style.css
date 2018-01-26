@@ -16,6 +16,8 @@ body {
     width: 99vw;
 }
 
+/*General styles - Start*/
+
 span {
     color: #ba870a;
 }
@@ -24,7 +26,7 @@ span {
     text-align: center;
 }
 
-
+/*General styles - Stop*/
 
 nav#main-nav {
     background: red;
@@ -153,12 +155,17 @@ section#about {
     padding-top: 5vh;
 }
 
+section#about h2 {
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
 section#about .container {
     display: flex;
     flex-direction: row;
 }
 section#about .container .programmer-description {
-    width: 50%;
+    min-width: 50%;
     font-size: 1.9em;
     font-weight: 100;
     line-height: 1.7em;
@@ -167,10 +174,11 @@ section#about .container .programmer-description p {
     margin-bottom: 1.4em;
 }
 section#about .container .image-programmer {  
-    width: 50%;
+    min-width: 50%;
+    min-height: 670px;
     perspective: 800px;
     display: block;
-    margin-top: 0;
+    margin-top: 0;   
 }
 
 section#about .container .image-programmer .behind-img, section#about .container .image-programmer .front-img {    
@@ -184,6 +192,9 @@ section#about .container .image-programmer .behind-img, section#about .container
     width: 80%;
     height: 80%;
     max-height: 600px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 section#about .container .image-programmer .behind-img {       
@@ -211,14 +222,14 @@ section#about .container .image-programmer:hover .behind-img {
     transform: rotate(360deg);
 }
 
-/*
+
 
 section#about .container .image-programmer .behind-img .bar-skills {
     width: 100%;
     background-color: #ddd;
 }
 
-section#about .container .image-programmer .behind-img .skills {
+section#about .container .image-programmer .behind-img .bar-skills .skills {
     text-align: right;
     padding-right: 20px;
     line-height: 40px;
@@ -227,34 +238,41 @@ section#about .container .image-programmer .behind-img .skills {
     transition-property: background-color, width;
 }
 
-section#about .container .image-programmer .behind-img .html, section#about .container .image-programmer .behind-img .css, section#about .container .image-programmer .behind-img .js, section#about .container .image-programmer .behind-img .jquery {
+section#about .container .image-programmer .behind-img .bar-skills .skills > span {
+    color: white;
+}
+
+section#about .container .image-programmer .behind-img .html,
+section#about .container .image-programmer .behind-img .css,
+section#about .container .image-programmer .behind-img .js,
+section#about .container .image-programmer .behind-img .jquery {
     width: 0%;
     background-color: #ddd;
 }
 
-.image-programmer .behind-img:hover .html {
+section#about .container .image-programmer .behind-img:hover .html {
     width: 90%;
     background-color: #4CAF50;
 }
 
-.image-programmer .behind-img:hover .css {
+section#about .container .image-programmer .behind-img:hover .css {
     width: 80%;
     background-color: #2196F3;
 }
 
-.image-programmer .behind-img:hover .js {
+section#about .container .image-programmer .behind-img:hover .js {
     width: 67%;
     background-color: #f44336;
 }
 
-.image-programmer .behind-img:hover .jquery {
+section#about .container .image-programmer .behind-img:hover .jquery {
     width: 65%;
     background-color: #808080;
 }
 
 
 
-*/
+
 
 section#skills {}
 
