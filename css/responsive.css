@@ -1,4 +1,9 @@
-@media all and (max-width: 480px) {
+@media all and (max-width: 680px) {
+    
+    nav#main-nav.mobile-menu {
+        max-height: 500px;        
+    }
+    
     nav#main-nav ul {
         flex-direction: column;
         align-items: flex-end;
@@ -7,21 +12,27 @@
     nav#main-nav ul li.menu-item.menu-home-item {
         order: 0;
         align-self: flex-start;
-        display: flex;
+
     }
     nav#main-nav ul li.menu-item.menu-mobile-item {
         display: flex;
         order: 1;
         margin-top: -30px;
+        border: 1px solid black;
     }
     nav#main-nav ul li.menu-item {
         padding: 5px 15px;
         order: 2;
-        display: none;
     }
-    nav#main-nav ul li.menu-item a, nav#main-nav ul li.menu-item a:hover {
+    nav#main-nav ul li.menu-item a,
+    nav#main-nav ul li.menu-item a:hover {
         border-bottom: none;
         padding: 0;
     }
+    nav#main-nav ul li.menu-item.menu-home-item i:hover {
+        animation-name: none;
+    }
+    
 }
 
+@media all and (max-width: 480px) {}
