@@ -20,7 +20,7 @@ $(function () {
         } else {
             $('nav#main-nav').removeClass("mobile-menu");            
         }
-    }
+    };
 
     $('.menu-mobile-item').on("click", function(){
       mobileMenu();  
