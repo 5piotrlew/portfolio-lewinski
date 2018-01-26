@@ -16,6 +16,10 @@ body {
     width: 99vw;
 }
 
+span {
+    color: #ba870a;
+}
+
 nav#main-nav {
     background: red;
     background-color: rgba(244, 231, 231, 0.9);
@@ -103,12 +107,8 @@ header#main-header h1.main-header-item {
     font-size: 4em;
 }
 
-header#main-header h1.main-header-item span {
-    color: #ba870a;
-}
-
 header#main-header h2.main-header-item {
- order: 1;
+    order: 1;
     font-size: 2em;
 }
 
@@ -136,7 +136,23 @@ header#main-header h1:hover::after {
     border-bottom-color: #ab760b;
 }
 
-section#about {}
+section#about {
+    display: grid;
+    grid-template-areas:  "hd hd hd hd hd hd"
+                          "i-p i-p i-p p-d p-d p-d";
+}
+
+section#about h3 {
+    grid-area: hd;
+}
+
+.programmer-description {
+    grid-area: p-d;
+}
+
+.image-programmer {
+    grid-area: i-p;
+}
 
 section#skills {}
 
