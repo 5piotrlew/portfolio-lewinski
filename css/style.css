@@ -85,6 +85,7 @@ nav#main-nav ul li.menu-item:not(.menu-home-item) a:hover {
 }
 
 header#main-header {
+    font-family: 'Roboto', sans-serif;
     min-height: 700px;
     display: flex;
     justify-content: center;
@@ -94,14 +95,45 @@ header#main-header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-weight: 300;
 }
 
 header#main-header h1.main-header-item {
     order: 2;
+    font-size: 4em;
+}
+
+header#main-header h1.main-header-item span {
+    color: #ba870a;
 }
 
 header#main-header h2.main-header-item {
- order: 1;   
+ order: 1;
+    font-size: 2em;
+}
+
+header#main-header .main-header-item {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+header#main-header h1::after {
+    content: '';
+    border: 1px solid transparent;
+    height: 76px;
+    width: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transition: 1s all;
+}
+
+header#main-header h1:hover::after {
+    width: 440px;
+    border-top-color: #a1700c;
+    border-bottom-color: #ab760b;
 }
 
 section#about {}
