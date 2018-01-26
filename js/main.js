@@ -9,18 +9,27 @@ $(function () {
             }, 1000);
         }
     });*/
-    var flag = true;   
-    $('.menu-mobile-item').on("click", function() {
-        console.log("ckjucj");
+    
+    /*main-nav section - start*/
+    
+    var flag = true;
+    function mobileMenu() {        
         flag = !flag;
-        if (!flag) {    
-        $('nav#main-nav').addClass("mobile-menu");
-            console.log("piewrszy if");
-    }
-        else {
-            $('nav#main-nav').removeClass("mobile-menu");
-            console.log("drugi if");
+        if (!flag) {
+            $('nav#main-nav').addClass("mobile-menu");            
+        } else {
+            $('nav#main-nav').removeClass("mobile-menu");            
         }
-        
+    }
+
+    $('.menu-mobile-item').on("click", function(){
+      mobileMenu();  
     });
+    
+    $('.list-menu-item').on("click", function(){
+      mobileMenu();  
+    });
+    
+    /*main-nav section - stop*/
+    
 });
