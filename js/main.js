@@ -66,7 +66,7 @@ $(function () {
     $('.programmer-description-item').each(function(index) {
         $(this).text('');
     });
-
+    
     
 
     var a = 1;
