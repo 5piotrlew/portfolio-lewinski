@@ -1,3 +1,4 @@
+
 $(function () {
 
     //Main-nav - Start
@@ -53,25 +54,56 @@ $(function () {
                 $('.skills').html('0');
             }, 200);
         });
-    /* Section ABOUT - Stop (PICTURE) */
     
-     /* Section About - PICTURE DESCRIPTION - Start*/
-    var descOneText = $('.programmer-description-item[0]').text();
-    var descOne = $('.programmer-description-item[0]');
-    var descTwoText = $('.programmer-description-item[1]').text();
-    var descTwo = $('.programmer-description-item[1]');
-    var descThreeText = $('.programmer-description-item[2]').text();
-    var descThree = $('.programmer-description-item[2]');
+    var paragraphText1 = $('.programmer-description').find('p').eq(0).text();
+    var paragraph1 = $('.programmer-description').find('p').eq(0);
+    var paragraphText2 = $('.programmer-description').find('p').eq(1).text();
+    var paragraph2 = $('.programmer-description').find('p').eq(1);
+    var paragraphText3 = $('.programmer-description').find('p').eq(2).text();
+    var paragraph3 = $('.programmer-description').find('p').eq(2);
     
-    $('.programmer-description-item').each(function(index) {
+    
+    $('.programmer-description-item').each(function(i) {       
         $(this).text('');
     });
     
     
+    
+   /* for (var i = 1; i < paragraphText1.length; i++) {
+        paragraph1.append(paragraphText1.charAt(i));
+    }*/
+    
+    var a = 0,
+        b = 0,
+        c = 0;
+    
+    var petla = setInterval(function(){
+        a++;
+        if (paragraphText1.length >= a){
+            paragraph1.append(paragraphText1.charAt(a));
+        } 
+        
+    }, 50);
+    /* Section ABOUT - Stop (PICTURE) */
+    
+     /* Section About - PICTURE DESCRIPTION - Start*/
+   /* $('.programmer-description-item').each(function(i) {
+        i++;
+        window['paragraphDescription' + i++] = $(this).text();        
+        $(this).text('');
+    });
+    zmienna = paragraphDescription1;
+    console.log(paragraphDescription1);
+    console.log(paragraphDescription2);
+    console.log(paragraphDescription3);
 
-    var a = 1;
+    
+    for (var i = 0; i < zmienna.length; i++) {
+        $('.programmer-description-item').text(zmienna.charAt(i));
+    }*/
+   /* var a = 1;
     var b = 1;
-    var c = 1;
+    var c = 1;*/
 
     /*function typeWriter() {
 

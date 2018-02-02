@@ -1,6 +1,18 @@
+@media all and (max-width: 1400px) {
+    section#about .container .programmer-description {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+}
+
 @media all and (max-width: 927px) {
     section#about .container {
         flex-direction: column;
+    }
+    section#about .container .programmer-description {
+        padding: 0 10px;
+        font-size: 1.1em;
+        margin-top: -80px;
     }
 }
 
@@ -39,4 +51,23 @@
     }
 }
 
-@media all and (max-width: 480px) {}
+@media all and (max-width: 480px) {
+    header#main-header h1.main-header-item {
+        font-size: 2.2em;
+    }
+
+    header#main-header h2.main-header-item {
+        font-size: 1.1em;
+    }
+    header#main-header h1::after {
+        height: 40px;
+    }
+
+    header#main-header h1:hover::after {
+        width: 220px;
+    }
+    section#about .container .image-programmer {
+        max-height: 600px;
+    }
+
+}
