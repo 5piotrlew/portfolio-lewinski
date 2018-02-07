@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     min-height: 700px;
     font-family: 'Lato', sans-serif;
+    background: #e3e3e3;
 }
 
 #wrapper {
@@ -287,9 +288,6 @@ section#skills {}
 section#experience {
     display: flex;
     flex-direction: column;
-
-    min-height: 900px;
-    background-color: #eee;
 }
 
 section#experience #counter {
@@ -371,60 +369,24 @@ section#experience #counter .counter-item .count-descr .count-title-button:hover
     right: 0;
 }
 
-/*section#experience #counter .counter-item .count-descr .count-title-button {
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    text-align: center;
-    font-size: 28px;
-    padding: 10px;
-   
-    transition: all 0.5s;
-    cursor: pointer;
-    
-    
-}*/
-
-/*section#experience #counter .counter-item .count-descr .count-title-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    color: #FFFFFF;
-}
-
-section#experience #counter .counter-item .count-descr .count-title-button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-section#experience #counter .counter-item .count-descr .count-title-button:hover span {
-    padding-right: 25px;
-}
-
-section#experience #counter .counter-item .count-descr .count-title-button:hover span:after {
-    opacity: 1;
-    right: 0;
-}*/
-
 section#projects-courses {
     display: flex;
     min-height: 700px;
     justify-content: space-between;
     flex-direction: row;
-    
+    background: #e3e3e3;
 }
-
+section#projects-courses #my-projects{
+    width: 52.5%;
+}
+section#projects-courses #my-courses{
+    width: 47.5%;
+}
 section#projects-courses #my-projects,
 section#projects-courses #my-courses {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 section#projects-courses #my-projects .my-projects-title,
@@ -438,7 +400,9 @@ section#projects-courses #my-courses .my-courses-title{
 
 section#projects-courses #my-projects .my-projects-title .my-projects-header,
 section#projects-courses #my-courses .my-courses-title .my-courses-header {
-   
+   font-weight: 300;
+    font-size: 1.8em;
+    padding-left: 10px;
 }
 
 section#projects-courses #my-projects .my-projects-description,

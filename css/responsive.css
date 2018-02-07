@@ -5,6 +5,18 @@
     }
 }
 
+@media all and (max-width: 1200px){
+    section#projects-courses {
+        flex-direction: column;
+    }
+    section#projects-courses #my-projects{
+    width: auto;
+}
+section#projects-courses #my-courses{
+    width: auto;
+}
+}
+
 @media all and (max-width: 927px) {
     section#about .container {
         flex-direction: column;
