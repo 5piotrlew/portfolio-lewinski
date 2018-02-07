@@ -22,6 +22,13 @@
     section#experience #counter .counter-item, section#experience #counter .counter-item:nth-child(2) {
         max-width: 300px;
     }
+    
+}
+
+@media all and (max-width: 909px) {
+    section#experience #counter .counter-item:nth-child(2) {
+        border-right: 2px solid transparent;
+    }
 }
 
 @media all and (max-width: 680px) {
@@ -56,6 +63,12 @@
     nav#main-nav ul li.menu-item a:hover {
         border-bottom: none;
         padding: 0;
+    }
+}
+
+@media all and (max-width: 606px) {
+    section#experience #counter .counter-item:not(:last-child) {
+        border-right: 2px solid transparent;
     }
 }
 

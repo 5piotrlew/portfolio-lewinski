@@ -152,7 +152,7 @@ section#about {
     /*width: 90vw;*/
     margin: 0 auto;
     min-height: 800px;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
     padding-top: 5vh;
 }
 
@@ -167,17 +167,17 @@ section#about .container {
     min-width: 100vw;
 }
 
-section#about .container .image-programmer {  
+section#about .container .image-programmer {
     min-width: 50%;
     min-height: 670px;
     perspective: 800px;
     display: block;
     padding-top: 40px;
-    
+
 }
 
 section#about .container .image-programmer .behind-img,
-section#about .container .image-programmer .front-img {    
+section#about .container .image-programmer .front-img {
     position: absolute;
     background: #e0e0e0;
     box-sizing: border-box;
@@ -193,17 +193,20 @@ section#about .container .image-programmer .front-img {
     right: 0;
 }
 
-section#about .container .image-programmer .behind-img {       
+section#about .container .image-programmer .behind-img {
     font-size: 1.5em;
 }
+
 section#about .container .image-programmer .front-img {
     background: url('../img/IMG_9062.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 91%;
-    background-color: (#e0e0e0;);
-      
+    background-color: (#e0e0e0;
+    );
+
 }
+
 section#about .container .image-programmer:hover .front-img {
     transform: rotateY(180deg);
 }
@@ -274,9 +277,8 @@ section#about .container .programmer-description {
     line-height: 1.7em;
     margin-top: 7px;
 }
-section#about .container .programmer-description p {
-    
-}
+
+section#about .container .programmer-description p {}
 
 
 
@@ -285,8 +287,8 @@ section#skills {}
 section#experience {
     display: flex;
     flex-direction: column;
-   
-    min-height: 900px;  
+
+    min-height: 900px;
     background-color: #eee;
 }
 
@@ -297,10 +299,13 @@ section#experience #counter {
     justify-content: center;
     text-align: center;
 }
-section#experience #counter .counter-item:nth-child(2){
+
+section#experience #counter .counter-item:nth-child(2) {
     max-width: 400px;
 }
-section#experience #counter .counter-item, section#experience #counter .counter-item .count-descr  {
+
+section#experience #counter .counter-item,
+section#experience #counter .counter-item .count-descr {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -405,9 +410,141 @@ section#experience #counter .counter-item .count-descr .count-title-button:hover
     opacity: 1;
     right: 0;
 }*/
-section#my-projects {}
 
-section#my-courses {}
+section#projects-courses {
+    display: flex;
+    min-height: 700px;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+section#projects-courses #my-projects,
+section#projects-courses #my-courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+section#projects-courses #my-projects .my-projects-title,
+section#projects-courses #my-courses .my-courses-title{
+    -webkit-clip-path: polygon(0 0, 68% 0, 29% 99%, 0 99%);
+    clip-path: polygon(0 0, 68% 0, 29% 99%, 0 99%);
+    background-color: #eee;
+   /* height: 700px;*/
+    flex: 1;
+}
+
+section#projects-courses #my-projects .my-projects-title .my-projects-header,
+section#projects-courses #my-courses .my-courses-title .my-courses-header {
+   
+}
+
+section#projects-courses #my-projects .my-projects-description,
+section#projects-courses #my-courses .my-courses-description{
+    /*height: 900px;*/
+   flex: 1;
+}
+
+section#projects-courses #my-projects .my-projects-description .items,
+section#projects-courses #my-courses .my-courses-description .items{
+    color: black;
+    font-size: 1.33em;
+    font-weight: 700;
+    margin-top: 25px;
+    font-style: italic;
+    color: #ab760b;
+    transition: 0.3s all;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons,
+section#projects-courses #my-courses .my-courses-description .icons{
+    height: 15px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons a,
+section#projects-courses #my-courses .my-courses-description .icons a{
+    text-decoration: none;
+    
+    /*margin: auto;*/
+    padding-left: 116px;
+    color: #213b50;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons a:hover, section#projects-courses #my-courses .my-courses-description .icons a:hover {
+    color: #426684;
+}
+
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-1, section#projects-courses #my-courses .my-courses-description .icons.icons-item-1 {
+    margin-left: -61px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-2, section#projects-courses #my-courses .my-courses-description .icons.icons-item-2 {
+    margin-left: -77px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-3, section#projects-courses #my-courses .my-courses-description .icons.icons-item-3 {
+    margin-left: -93px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-4, section#projects-courses #my-courses .my-courses-description .icons.icons-item-4 {
+    margin-left: -109px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-5, section#projects-courses #my-courses .my-courses-description .icons.icons-item-5 {
+    margin-left: -125px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-6, section#projects-courses #my-courses .my-courses-description .icons.icons-item-6 {
+    margin-left: -141px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-7, section#projects-courses #my-courses .my-courses-description .icons.icons-item-7 {
+    margin-left: -157px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-8, section#projects-courses #my-courses .my-courses-description .icons.icons-item-8 {
+    margin-left: -173px;
+}
+
+section#projects-courses #my-projects .my-projects-description .icons.icons-item-9, section#projects-courses #my-courses .my-courses-description .icons.icons-item-9 {
+    margin-left: -189px;
+}
+
+section#projects-courses #my-projects .my-projects-description .project-item-1, section#projects-courses #my-courses .my-courses-description .cours-item-1 {
+  margin-left: 36px;  
+}
+section#projects-courses #my-projects .my-projects-description .project-item-2, section#projects-courses #my-courses .my-courses-description .cours-item-2 {
+    margin-left: 22px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-3, section#projects-courses #my-courses .my-courses-description .cours-item-3 {
+    margin-left: 8px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-4, section#projects-courses #my-courses .my-courses-description .cours-item-4 {
+    margin-left: -4px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-5, section#projects-courses #my-courses .my-courses-description .cours-item-5 {
+    margin-left: -21px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-6, section#projects-courses #my-courses .my-courses-description .cours-item-6 {
+    margin-left: -34px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-7, section#projects-courses #my-courses .my-courses-description .cours-item-7 {
+    margin-left: -52px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-8, section#projects-courses #my-courses .my-courses-description .cours-item-8 {
+    margin-left: -70px;
+}
+section#projects-courses #my-projects .my-projects-description .project-item-9, section#projects-courses #my-courses .my-courses-description .cours-item-9 {
+    margin-left: -87px;
+}
+
+
+
+
 
 section#contact {}
-
